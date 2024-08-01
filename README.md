@@ -12,6 +12,8 @@ login_campus.py的功能是，每5秒检测一次，如果检测到连接了名�
 
 如果你需要添加开机自启的话，可以参考startup_campus_wifi_auto_login.bat脚本，把其中的pythonw路径和python脚本路径改成你自己的，然后放到开机自启程序文件夹中（win+R，输入shell:startup，即可快速打开这个文件夹）。
 
+欢迎大家贡献代码😊
+
 ## TODO
 
 - [ ] 在MacOS上测试
