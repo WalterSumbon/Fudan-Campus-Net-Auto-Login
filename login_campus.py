@@ -17,7 +17,8 @@ logging.basicConfig(
     handlers=[RotatingFileHandler(log_file, maxBytes=100000, backupCount=5)],
     level=logging.INFO,
     format='[%(asctime)s] %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
+    datefmt='%Y-%m-%d %H:%M:%S',
+    encoding='utf-8'
 )
 
 def print_error(func):
