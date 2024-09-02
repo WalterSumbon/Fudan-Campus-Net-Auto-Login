@@ -1,0 +1,1 @@
+/Users/xiahan/miniconda3/bin/python /Users/xiahan/Documents/GitHub/Fudan-Campus-Net-Auto-Login/login_campus.py

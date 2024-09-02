@@ -10,9 +10,15 @@ from functools import wraps
 import logging
 from logging.handlers import RotatingFileHandler
 import base64
+import os
 
 # 设置日志
-log_file = r'C:\Users\Zenith\work\auto_campus_login\login_campus.log'
+script_path = os.path.abspath(sys.argv[0])
+dir_path, file_name = os.path.split(script_path)
+file_base, file_extension = os.path.splitext(file_name)
+new_file_name = file_base + '.log'
+log_file = os.path.join(dir_path, new_file_name)    # 日志放在脚本同目录下的同名文件中
+
 logging.basicConfig(
     handlers=[RotatingFileHandler(log_file, maxBytes=100000, backupCount=5)],
     level=logging.INFO,
